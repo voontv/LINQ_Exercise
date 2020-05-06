@@ -43,10 +43,7 @@ namespace Voontv
         public class Book
         {
             public int MaBook { get; set; }
-            public string NameBook
-            {
-                get; set;
-            }
+            public string NameBook { get; set; }
 
             public Book(int createMabook, string createdName)
             {
