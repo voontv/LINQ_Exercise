@@ -1,10 +1,12 @@
+###Extension method là gì ?
 Extension method đã giống như trong kotlin đã được giới thiệu, nó là phần mở rộng của 1 class 
 nào đó, như trong kotlin ta có thể mở rộng thêm vài phương thức mới cho String nếu ta muốn
 (trong trường hợp một xử lý nào đó thường được dùng lặp đi lặp lại, nhưng không có trong
 phương thức có sẵn của lớp string), tương tự như kotlin nhưng trong C# nó khác nhau ở chỗ nó phải là
 static Class, static method và sử dụng từ khóa this trước đối tượng muốn Extension method:
 
-Example:
+###Example:
+```Cs
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -66,3 +68,4 @@ namespace Voontv
         }
     }
 }
+```
