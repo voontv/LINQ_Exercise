@@ -1,8 +1,7 @@
 ## Delegate là gì ?
-Là kiểu dữ liệu mà biến tạo ra từ nó tham chiếu tới phương thức. Nó có thể được sử dụng
+Là biến kiểu tham chiếu mà tham chiếu tới một phương thức. Nó có thể được sử dụng
 để có thể tham chiếu tới bất cứ phương thức nào có cùng kiểu trả về và cùng cấu trúc các
 parameters sử dụng.
-Cú pháp : [access modifier] delegate [return type] [delegate name]([parameters])
 
 
 ## Example:
