@@ -1,7 +1,8 @@
-Annonymous method là một loại phương thức không có tên, nó được khai báo bởi từ khóa
-delegate
+###Anonymous method là gì ?
+Anonymous method là một loại phương thức không có tên chỉ có thân phương thức, nó được khai báo bởi từ khóa delegate
 
-Ví dụ :
+###Example :
+```cs
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,3 +35,4 @@ namespace Voontv
         }
     }
 }
+```
