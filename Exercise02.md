@@ -1,7 +1,7 @@
-###Anonymous method là gì ?
+## Anonymous method là gì ?
 Anonymous method là một loại phương thức không có tên chỉ có thân phương thức, nó được khai báo bởi từ khóa delegate
 
-###Example :
+## Example :
 ```cs
 using System;
 using System.Collections.Generic;
