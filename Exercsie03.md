@@ -1,6 +1,6 @@
 ## Anonymous class là gì ?
-Anonymous class là loại class mà các thuộc tính của nó là read-only. Nó không chứa bất kỳ
-phương thức hoặc sự kiện hoặc bất kỳ thành viên nào khác.
+Anonymous class là loại class không có tên, kế thừa trực tiếp từ kiểu object.
+Nó chỉ chứa các trường public và các thành viên của nó phải non static.
 Nó được khởi tạo bằng cách sử dụng từ khóa new và khởi tạo trực tiếp giá trị cho đối tượng.
 Nó chỉ được sử dụng trong phạm vi phương thức nó được định nghĩa. Thông thường được sử dụng
 trong các truy vấn của LINQ.
