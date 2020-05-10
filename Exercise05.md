@@ -1,8 +1,13 @@
 ## Generis là gì ?
-Là khi ta muốn khởi tạo ra các lớp, các hàm mà không muốn quan tâm đến đối số kiểu dữ liệu là gì.
+Là khi ta muốn khởi tạo ra các lớp, các hàm mà param và cách xử lý giống nhau nhưng chỉ khác
+nhau ở kiểu dữ liệu và kiểu trả về (Trừ kiểu void).
 
 ## Tác dụng khi sử dụng Generis là gì ?
-Giúp tái sử dụng mã nguồn, giúp code linh hoạt hơn.
+Giúp tái sử dụng mã nguồn, giúp code linh hoạt hơn. Có thể xử lý các phương thức xử lý 
+giống nhau, cùng param chỉ khác kiểu dữ liệu.
+#### Ví dụ bài toán tính độ dài của một input bất kỳ
+Hướng giải quyết là ta viết hàm tham số đầu vào là input, sau đó chuyển sang kiểu string --> tính length, nhưng vấn đề đặt ra ở đây, mỗi input với mỗi kiểu khác nhau ta lại viết mỗi hàm với param
+khác nhau, tới lúc này thì ta dùng generis là ổn nhất, code sẽ gọn gàng và linh hoạt.
 
 ## Các dạng Generis ?
 Có 3 loại Generis
