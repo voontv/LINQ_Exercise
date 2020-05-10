@@ -1,0 +1,2 @@
+## Tại sao muốn sử dụng Linq thì phải import namespace System.Linq
+Linq là 1 danh sách các extension method, thêm một số method cho interface IENumerable. Mà namespace System.Linq chứa các classes, interfaces và enumerations đó, nên muốn sử dụng Linq chúng ta phải import nó.
