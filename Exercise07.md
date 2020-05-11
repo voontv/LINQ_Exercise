@@ -1,5 +1,7 @@
 ## Từ khóa yield dùng để làm gì ?
-Dùng để thông báo cho trình biên dịch biết rằng phương thức mà nó có mặt là một khối lặp. Nó được dùng với từ khóa break để báo kết thúc lặp hoặc sử dụng với từ khóa return để trả về giá trị mà khối lặp muốn thực hiện.
+Dùng khi giá trị phương thức mà chúng ta muốn trả về là IEnumerable. 
+
+Nó được dùng với từ khóa break để báo kết thúc lặp hoặc sử dụng với từ khóa return để trả về giá trị mà khối lặp muốn thực hiện.
 
 ## Example:
 ```` cs
