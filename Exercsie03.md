@@ -1,0 +1,56 @@
+## Anonymous class là gì ?
+Anonymous class là loại class không có tên, kế thừa trực tiếp từ kiểu object.
+Nó chỉ chứa các trường public và các thành viên của nó phải non static.
+Nó được khởi tạo bằng cách sử dụng từ khóa new và khởi tạo trực tiếp giá trị cho đối tượng.
+Nó chỉ được sử dụng trong phạm vi phương thức nó được định nghĩa. Thông thường được sử dụng
+trong các truy vấn của LINQ.
+
+## Example:
+```cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace Voontv
+{
+
+    class main
+    {
+        static void Main()
+        {
+            var Course = new
+            {
+                NameCourse = "Net Program",
+                LengCourse = "five part",
+                NameTeacher = "Vo Quang Hoa"
+            };
+
+            IList<Book> listbook = new List<Book> { new Book(12, "Sport"),
+                new Book(122, "IT"),
+                new Book(134, "Sex"),
+                new Book(314, "Java"),
+                new Book(512, "Tenis")};
+            var books = from book in listbook
+                        where book.NameBook.Length > 2
+                        select new { Value = book.MaBook * 10, NewName = book.NameBook };
+
+            foreach (var book in books)
+            {
+                Console.WriteLine(String.Join(" : ", book.NewName, book.Value));
+            }
+        }
+
+        public class Book
+        {
+            public int MaBook { get; set; }
+            public string NameBook { get; set; }
+
+            public Book(int createMabook, string createdName)
+            {
+                MaBook = createMabook;
+                NameBook = createdName;
+            }
+        }
+    }
+}
+```
