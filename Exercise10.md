@@ -2,13 +2,13 @@
 Được sử dụng khi ta gặp các dạng tính toán tích lũy.
 
 ## Method
-```` cs
+``` cs
 Aggregate<TSource,TAccumulate,TResult>(IEnumerable<TSource>, TAccumulate, Func<TAccumulate,TSource,TAccumulate>, Func<TAccumulate,TResult>)	
 Aggregate<TSource,TAccumulate>(IEnumerable<TSource>, TAccumulate, Func<TAccumulate,TSource,TAccumulate>)	
 Aggregate<TSource>(IEnumerable<TSource>, Func<TSource,TSource,TSource>)
-````
+```
 ## Example
-```` cs
+``` cs
  class main
     {
         static void Main()
@@ -34,18 +34,18 @@ Aggregate<TSource>(IEnumerable<TSource>, Func<TSource,TSource,TSource>)
             //The number max and divisibility for 5
         }
     }
-````
+```
 
 ## All
 Dùng để xác định tất cả các element trong 1 tập dữ liệu có cùng thỏa mãn một điều kiện nào đó mà ta muốn kiểm tra hay không.
 
 ## Method
-```` cs
+```cs
 public static bool All<TSource> (this System.Collections.Generic.IEnumerable<TSource> source, Func<TSource,bool> predicate);
-````
+```
 
 ## Example
-````cs
+```cs
         static void Main()
         {
             var listNumber = new List<int> { 1, 5, 8, 9, 12, 34, 43, 17, 656, 232, 264, 18, 95, 19 };
