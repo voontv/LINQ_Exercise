@@ -1,0 +1,2 @@
+## Phân biệt Concat với Union
+Concat là nối 2 chuỗi cùng loại thành 1 chuỗi lớn gồm tất cả các phần tử 2 chuỗi. Union thì cũng giống nối 2 chuỗi nhưng các phần tử giống nhau sẽ lược bỏ chỉ lấy 1. Hay nói cách khác Union giống như kêt quả của nối 2 chuỗi dùng Concat sau đó thực hiện Distinct().
