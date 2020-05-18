@@ -25,6 +25,17 @@
 
 
             Console.WriteLine(string.Join(" ", words));
+            //C6
+            string word = string.Join(" ", words);
+            // Loại bỏ các từ trong danh sách badword
+            for (var i = 0; i < badwords.Length; i++)
+            {
+                word = word.Replace(badwords[i],"");
+            }
 
+            //c7
+            var listWord = words.ToList();
+            // Loại bỏ các từ trong danh sách badword
+            listWord.RemoveAll(x => badwords.Contains(x));
         }
 ```
