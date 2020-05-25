@@ -1,0 +1,2 @@
+## Trong các hàm FirstOrDefault, SingleOrDefault, LastOrDefault, Default ở đây thực chất là gì
+Nó thực chất giống như việc tạo giá trị default cho kết quả trả về khi không tìm thấy được phần tử đáp ứng điều kiện đầu vào.
