@@ -41,6 +41,22 @@ Dùng để lưu trữ kết quả của biểu thức con trong biểu thức t
             {
                 Console.WriteLine(str);
             }
+
+            var listBook = new List<Book> { new Book(1, "Java", 200), new Book(3, "Python", 120),
+                                            new Book(4, "C#", 150), new Book(8, "English", 210),
+                                            new Book(1, "Java", 600), new Book(8, "Java", 300)};
+            var letbook = from book in listBook
+                          group book.Value by book.NameBook into groupBook
+                          let countGroup = groupBook.Count()
+                          select new
+                          {
+                              name = groupBook.Key,
+                              numberBook = countGroup
+                          };
+            foreach(var gr in letbook)
+            {
+                Console.WriteLine("group {0} number in group {1} ", gr.name, gr.numberBook);
+            }
             
         }
 ```
